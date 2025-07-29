@@ -1,0 +1,122 @@
+ <style>
+        :root {
+            --primary-color: #5d737e;
+            --secondary-color: #64b6ac;
+            --accent-color: #c0fdfb;
+            --light-color: #f0f7f4;
+            --dark-color: #3a506b;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--light-color);
+            color: var(--dark-color);
+        }
+        
+        .navbar {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 120px 0;
+            margin-bottom: 50px;
+        }
+        
+        .booking-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            padding: 30px;
+            margin-top: -80px;
+            z-index: 10;
+            position: relative;
+        }
+        
+        .btn-primary {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        
+        .room-card {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            margin-bottom: 30px;
+        }
+        
+        .room-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .room-card img {
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        .room-card .card-body {
+            padding: 25px;
+        }
+        
+        .room-card .price {
+            color: var(--secondary-color);
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+        
+        .amenities-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .amenities-list li {
+            margin-bottom: 8px;
+        }
+        
+        .amenities-list li i {
+            color: var(--secondary-color);
+            margin-right: 10px;
+        }
+        
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 50px 0 20px;
+        }
+        
+        footer a {
+            color: var(--accent-color);
+        }
+        
+        .social-icons a {
+            color: white;
+            font-size: 1.5rem;
+            margin-right: 15px;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 80px 0;
+            }
+            
+            .booking-card {
+                margin-top: 0;
+            }
+        }
+    </style>
